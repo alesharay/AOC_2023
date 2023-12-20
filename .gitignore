@@ -20,10 +20,7 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
+vendor/
 
 # End of https://www.toptal.com/developers/gitignore/api/go
 
