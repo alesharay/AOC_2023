@@ -136,4 +136,11 @@ func Write_to_file(filename string, output string) {
 	defer out.Close()
 	_, err = out.WriteString(output+"\n")
 	Check(err)
+<<<<<<< HEAD
+=======
+}
+
+func Get_Full_Filename(io, day, filename string) string {
+	return fmt.Sprintf("config/%v/%v/%v.txt", io, day, filename)
+>>>>>>> 223f4eebf3efcf7a04dacbd5ca4ef9b7b8bd767d
 }
