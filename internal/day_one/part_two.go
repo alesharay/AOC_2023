@@ -2,16 +2,14 @@ package day_one
 
 import (
 	"fmt"
-	"regexp"
-	"strconv"
-	"strings"
-
-	"github.com/alesharay/aoc_2023/config"
 )
 
 func Part_2() {
 	fmt.Printf("\nDay 1 Part 2:\n\n")
 
-	input_filename := "config/input/day1/part1.txt"
-	lines := config.Read_from_File(input_filename)
+	// day := "day1"
+	// filename := "part1"
+
+	// lines := utils.Read_from_File(utils.Get_Full_Filename("input", day, filename))
+
 }

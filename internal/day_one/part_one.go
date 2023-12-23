@@ -2,22 +2,21 @@ package day_one
 
 import (
 	"fmt"
-	"os"
 	"regexp"
 	"strconv"
 	"strings"
 
-	"github.com/alesharay/aoc_2023/config"
-
+	utils "github.com/alesharay/aoc_2023/config"
 )
 
 
 func Part_1() {
 	fmt.Printf("\nDay 1 Part 1:\n\n")
 
-	input, err := os.ReadFile("config/input/day1/part1.txt")
-	config.Check(err)
-	lines := strings.Split(string(input), "\n")
+	day := "day1"
+	filename := "part1"
+
+	lines := utils.Read_from_File(utils.Get_Full_Filename("input", day, filename))
 
 	alpha := regexp.MustCompile(`[a-zA-z]`)
 	sum := 0
