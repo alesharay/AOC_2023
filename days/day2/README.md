@@ -1,4 +1,4 @@
-# 2023 Day 2: Cube Conundrum
+# Day 2: Cube Conundrum
 [back to TOC](../../README.md#2023-table-of-contents)
 
 You're launched high into the atmosphere! The apex of your trajectory just barely reaches the surface of a large island floating in the sky. You gently land in a fluffy pile of leaves. It's quite cold, but you don't see much snow. An Elf runs over to greet you.
@@ -33,7 +33,7 @@ Determine which games would have been possible if the bag had been loaded with o
 
 <br><br>
 
-# 2023 Day 2: part 2:
+# Day 2: part 2:
 [back to TOC](../../README.md#2023-table-of-contents)
 
 The Elf says they've stopped producing snow because they aren't getting any `water`! He isn't sure why the water stopped; however, he can show you how to get to the water source to check it out for yourself. It's just up ahead!

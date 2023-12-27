@@ -1,4 +1,4 @@
-# 2023 Day 1: Trebuchet?!
+# Day 1: Trebuchet?!
 [back to TOC](../../README.md#2023-table-of-contents)
 
 You try to ask the following questions:
@@ -27,7 +27,7 @@ Consider your entire calibration document. What is the sum of all of the calibra
 
 <br><br>
 
-# 2023 Day 1: part 2:
+# Day 1: part 2:
 [back to TOC](../../README.md#2023-table-of-contents)
 
 Your calculation isn't quite right. It looks like some of the digits are actually spelled out with letters: one, two, three, four, five, six, seven, eight, and nine also count as valid "digits".

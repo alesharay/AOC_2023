@@ -1,4 +1,4 @@
-# 2023 Day 3: Gear Ratios
+# Day 3: Gear Ratios
 [back to TOC](../../README.md#2023-table-of-contents)
 
 You and the Elf eventually reach a `gondola lift` station; he says the gondola lift will take you up to the `water source`, but this is as far as he can bring you. You go inside.
@@ -36,5 +36,5 @@ Of course, the actual engine schematic is much larger.
 
 <br><br>
 
-# 2023 Day 3. part 2:
+# Day 3. part 2:
 [back to TOC](../../README.md#2023-table-of-contents)
