@@ -1,4 +1,4 @@
-# advent-of-code
+# Advent of Code 2023
 
 ## 2023
 
@@ -9,7 +9,6 @@ Link to site: [https://adventofcode.com/2023/](https://adventofcode.com/2023/)
 [1. Day 1: Trebuchet?!](days/day_one/README.md)\
 [2. Day 2: Cube Conundrum](days/day_two/README.md)\
 [3. Day 3: Gear Ratios](days/day_three/README.md)
-
 
 ------------------------------------------------------------------------------------
 
