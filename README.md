@@ -6,7 +6,9 @@ Link to site: [https://adventofcode.com/2023/](https://adventofcode.com/2023/)
 
 ## 2023 Table of Contents
 
-[1. Background 2023](#background-2023)\
+[_TOC_]
+
+<!-- [1. Background 2023](#background-2023)\
 [2. Day 1: Trebuchet?!](#2023-day-1-trebuchet)\
 [3. Day 1 - part two](#2023-day-1-part-two)\
 [4. Day 2:](#2023-day-2)\
@@ -56,7 +58,7 @@ Link to site: [https://adventofcode.com/2023/](https://adventofcode.com/2023/)
 [6. Day 24:](#2023-day-24)\
 [7. Day 24 - part two](#2023-day-24-part-two)\
 [6. Day 25:](#2023-day-25)\
-[7. Day 25 - part two](#2023-day-25-part-two)
+[7. Day 25 - part two](#2023-day-25-part-two) -->
 
 
 ------------------------------------------------------------------------------------
