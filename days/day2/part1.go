@@ -1,4 +1,4 @@
-package day_two
+package day2
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 
 
 func Part_1(lines []string) {
-	day := "day_two"
+	day := "day2"
 	filename := "part1"
 
 	full_input_filename := utils.Get_Full_Filename("input", day, filename)

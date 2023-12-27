@@ -1,4 +1,4 @@
-package day_one
+package day1
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 
 
 func Part_1(lines []string) {
-	day := "day_one"
+	day := "day1"
 	filename := "part1"
 
 	if len(lines) == 0 {

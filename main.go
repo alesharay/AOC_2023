@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/alesharay/aoc_2023/days/day_one"
-	"github.com/alesharay/aoc_2023/days/day_two"
+	"github.com/alesharay/aoc_2023/days/day1"
+	"github.com/alesharay/aoc_2023/days/day2"
 )
 
 
@@ -15,21 +15,21 @@ func main() {
 	fmt.Printf("Day 1:\n\n")
 
 	fmt.Printf("  Part 1:\n")
-	day_one.Part_1(strings.Split("", ""))
+	day1.Part_1(strings.Split("", ""))
 	fmt.Println()
 
 	fmt.Printf("  Part 2:\n")
-	day_one.Part_2()
+	day1.Part_2()
 	fmt.Println("===========================================\n\n")
 
 	fmt.Printf("Day 2:\n\n")
 
 
 	fmt.Printf("  Part 1:\n")
-	day_two.Part_1(strings.Split("", ""))
+	day2.Part_1(strings.Split("", ""))
 	fmt.Println()
 
 	fmt.Printf("  Part 2:\n")
-	day_two.Part_2(strings.Split("", ""))
+	day2.Part_2(strings.Split("", ""))
 	fmt.Println("===========================================\n\n")
 }
