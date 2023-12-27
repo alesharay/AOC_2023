@@ -147,3 +147,7 @@ func Write_to_file(filename string, output string) {
 func Get_Full_Filename(io, day, filename string) string {
 	return fmt.Sprintf("config/%v/%v/%v.txt", io, day, filename)
 }
+
+func Is_Game_Possible(count, max int) bool {
+	return count <= max
+}
