@@ -12,7 +12,7 @@ import (
 
 func Part_1(lines []string) {
 	day := "day1"
-	filename := "sample2"
+	filename := "part1"
 
 	if len(lines) == 0 {
 		lines = utils.Read_from_File(utils.Get_Full_Filename("input", day, filename))

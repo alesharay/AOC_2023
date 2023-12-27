@@ -117,7 +117,7 @@ zoneight234
 
 In this example, the calibration values are 29, 83, 13, 24, 42, 14, and 76. Adding these together produces 281.
 
-What is the sum of all of the calibration values? ``
+What is the sum of all of the calibration values? `54824`
 
 ### 2023 Day 2:
 [back to TOC](#2023-table-of-contents)
