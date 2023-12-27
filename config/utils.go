@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	word_to_num = map[string]string{
+	Word_to_Num = map[string]string {
 		"one": "1",
 		"two": "2",
 		"three": "3",
@@ -18,7 +18,38 @@ var (
 		"eight": "8",
 		"nine": "9",
 	}
+
+	Keys = []string {
+		"one",
+		"two",
+		"three",
+		"four",
+		"five",
+		"six",
+		"seven",
+		"eight",
+		"nine",
+	}
 )
+
+func Shares_Letter(
+	line string, 
+	word string,
+	start_old int,
+	end_old int) bool {
+
+
+	shares_letter := false
+
+	start_new := strings.Index(line, word)
+
+	if start_new > start_old && start_new <= end_old {
+		shares_letter = true
+	}
+
+
+	return shares_letter
+}
 
 
 func Check(e error) {
