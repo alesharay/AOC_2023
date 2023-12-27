@@ -10,8 +10,8 @@ import (
 )
 
 
-func Part_2(lines []string) {
-	day := "day2"
+func Part_1(lines []string) {
+	day := "day_two"
 	filename := "part1"
 
 	full_input_filename := utils.Get_Full_Filename("input", day, filename)
@@ -23,6 +23,8 @@ func Part_2(lines []string) {
 	out_e := os.Remove(full_output_filename)
 	utils.Check(out_e)
 
+	max_red, max_blue, max_green := 12, 14, 13
+	game_is_possible := true
 	sum := 0
 
 	for _, line := range lines {
@@ -31,8 +33,9 @@ func Part_2(lines []string) {
 			continue
 		}
 
-		max_red, max_blue, max_green := 0, 0, 0
 		games := strings.Split(line, ":")
+		id, _ := strconv.Atoi(strings.Split(games[0], " ")[1])
+
 		rounds := strings.Split(games[1], ";")
 
 		for _, round := range rounds {
@@ -44,24 +47,27 @@ func Part_2(lines []string) {
 
 				switch color {
 					case "blue":
-						if count > max_blue {
-							max_blue = count
-						}
+						game_is_possible = utils.Is_Game_Possible(count, max_blue)
 					case "red":
-						if count > max_red {
-							max_red = count
-						}
+						game_is_possible = utils.Is_Game_Possible(count, max_red)
 					case "green":
-						if count > max_green {
-							max_green = count
-						}
+						game_is_possible = utils.Is_Game_Possible(count, max_green)
 				}
+
+				if !game_is_possible {
+					break
+				}
+			}
+
+			if !game_is_possible {
+				break
 			}
 		}
 
-		power := max_blue * max_green * max_red
-		sum += power
-		utils.Write_to_file(full_output_filename, strconv.Itoa(power))
+		if game_is_possible {
+			utils.Write_to_file(full_output_filename, strconv.Itoa(id))
+			sum += id
+		}
 	}
 
 	fmt.Printf("---- Sum: %v\n\n", sum)

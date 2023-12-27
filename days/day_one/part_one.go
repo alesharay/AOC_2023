@@ -11,7 +11,7 @@ import (
 
 
 func Part_1(lines []string) {
-	day := "day1"
+	day := "day_one"
 	filename := "part1"
 
 	if len(lines) == 0 {

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/alesharay/aoc_2023/internal/day_one"
-	"github.com/alesharay/aoc_2023/internal/day_two"
+	"github.com/alesharay/aoc_2023/days/day_one"
+	"github.com/alesharay/aoc_2023/days/day_two"
 )
 
 

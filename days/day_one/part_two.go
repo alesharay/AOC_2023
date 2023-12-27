@@ -13,7 +13,7 @@ import (
 func Part_2() {
 	sum := 0
 	num_reg := regexp.MustCompile(`[123456789]`)
-	day := "day1"
+	day := "day_one"
 	filename := "part1"
 
 	full_input_filename := utils.Get_Full_Filename("input", day, filename)
