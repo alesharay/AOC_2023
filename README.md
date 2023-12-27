@@ -6,59 +6,57 @@ Link to site: [https://adventofcode.com/2023/](https://adventofcode.com/2023/)
 
 ## 2023 Table of Contents
 
-[_TOC_]
-
-<!-- [1. Background 2023](#background-2023)\
+[1. Background 2023](#background-2023)\
 [2. Day 1: Trebuchet?!](#2023-day-1-trebuchet)\
-[3. Day 1 - part two](#2023-day-1-part-two)\
+[3. Day 1 - part 2:](#2023-day-1-part-2)\
 [4. Day 2:](#2023-day-2)\
-[5. Day 2 - part two](#2023-day-2-part-two)\
+[5. Day 2 - part 2:](#2023-day-2-part-2)\
 [6. Day 3:](#2023-day-3)\
-[7. Day 3 - part two](#2023-day-3-part-two)\
+[7. Day 3 - part 2:](#2023-day-3-part-2)\
 [6. Day 4:](#2023-day-4)\
-[7. Day 4 - part two](#2023-day-4-part-two)\
+[7. Day 4 - part 2:](#2023-day-4-part-2)\
 [6. Day 5:](#2023-day-5)\
-[7. Day 5 - part two](#2023-day-5-part-two)\
+[7. Day 5 - part 2:](#2023-day-5-part-2)\
 [6. Day 6:](#2023-day-6)\
-[7. Day 6 - part two](#2023-day-6-part-two)\
+[7. Day 6 - part 2:](#2023-day-6-part-2)\
 [6. Day 7:](#2023-day-7)\
-[7. Day 7 - part two](#2023-day-7-part-two)\
+[7. Day 7 - part 2:](#2023-day-7-part-2)\
 [6. Day 8:](#2023-day-8)\
-[7. Day 8 - part two](#2023-day-8-part-two)\
+[7. Day 8 - part 2:](#2023-day-8-part-2)\
 [6. Day 9:](#2023-day-9)\
-[7. Day 9 - part two](#2023-day-9-part-two)\
+[7. Day 9 - part 2:](#2023-day-9-part-2)\
 [6. Day 10:](#2023-day-10)\
-[7. Day 10 - part two](#2023-day-10-part-two)\
+[7. Day 10 - part 2:](#2023-day-10-part-2)\
 [6. Day 11:](#2023-day-11)\
-[7. Day 11 - part two](#2023-day-11-part-two)\
+[7. Day 11 - part 2:](#2023-day-11-part-2)\
 [6. Day 12:](#2023-day-12)\
-[7. Day 12 - part two](#2023-day-12-part-two)\
+[7. Day 12 - part 2:](#2023-day-12-part-2)\
 [6. Day 13:](#2023-day-13)\
-[7. Day 13 - part two](#2023-day-13-part-two)\
+[7. Day 13 - part 2:](#2023-day-13-part-2)\
 [6. Day 14:](#2023-day-14)\
-[7. Day 14 - part two](#2023-day-14-part-two)\
+[7. Day 14 - part 2:](#2023-day-14-part-2)\
 [6. Day 15:](#2023-day-15)\
-[7. Day 15 - part two](#2023-day-15-part-two)\
+[7. Day 15 - part 2:](#2023-day-15-part-2)\
 [6. Day 16:](#2023-day-16)\
-[7. Day 16 - part two](#2023-day-16-part-two)\
+[7. Day 16 - part 2:](#2023-day-16-part-2)\
 [6. Day 17:](#2023-day-17)\
-[7. Day 17 - part two](#2023-day-17-part-two)\
+[7. Day 17 - part 2:](#2023-day-17-part-2)\
 [6. Day 18:](#2023-day-18)\
-[7. Day 18 - part two](#2023-day-18-part-two)\
+[7. Day 18 - part 2:](#2023-day-18-part-2)\
 [6. Day 19:](#2023-day-19)\
-[7. Day 19 - part two](#2023-day-19-part-two)\
+[7. Day 19 - part 2:](#2023-day-19-part-2)\
 [6. Day 20:](#2023-day-20)\
-[7. Day 20 - part two](#2023-day-20-part-two)\
+[7. Day 20 - part 2:](#2023-day-20-part-2)\
 [6. Day 21:](#2023-day-21)\
-[7. Day 21 - part two](#2023-day-21-part-two)\
+[7. Day 21 - part 2:](#2023-day-21-part-2)\
 [6. Day 22:](#2023-day-22)\
-[7. Day 22 - part two](#2023-day-22-part-two)\
+[7. Day 22 - part 2:](#2023-day-22-part-2)\
 [6. Day 23:](#2023-day-23)\
-[7. Day 23 - part two](#2023-day-23-part-two)\
+[7. Day 23 - part 2:](#2023-day-23-part-2)\
 [6. Day 24:](#2023-day-24)\
-[7. Day 24 - part two](#2023-day-24-part-two)\
+[7. Day 24 - part 2:](#2023-day-24-part-2)\
 [6. Day 25:](#2023-day-25)\
-[7. Day 25 - part two](#2023-day-25-part-two) -->
+[7. Day 25 - part 2:](#2023-day-25-part-2)
 
 
 ------------------------------------------------------------------------------------
@@ -100,7 +98,7 @@ In this example, the calibration values of these four lines are `12`, `38`, `15`
 Consider your entire calibration document. What is the sum of all of the calibration values? `55386`
 
 
-### 2023 Day 1: Part Two
+### 2023 Day 1: part 2:
 [back to TOC](#2023-table-of-contents)
 
 Your calculation isn't quite right. It looks like some of the digits are actually spelled out with letters: one, two, three, four, five, six, seven, eight, and nine also count as valid "digits".
@@ -126,7 +124,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 2: Part Two
+### 2023 Day 2: part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -136,7 +134,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 3. Part Two
+### 2023 Day 3. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -146,7 +144,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 4. Part Two
+### 2023 Day 4. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -156,7 +154,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 5. Part Two
+### 2023 Day 5. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -166,7 +164,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 6. Part Two
+### 2023 Day 6. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -176,7 +174,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 7. Part Two
+### 2023 Day 7. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -186,7 +184,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 8. Part Two
+### 2023 Day 8. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -196,7 +194,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 9. Part Two
+### 2023 Day 9. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -206,7 +204,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 10. Part Two
+### 2023 Day 10. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -216,7 +214,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 11. Part Two
+### 2023 Day 11. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -226,7 +224,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 12. Part Two
+### 2023 Day 12. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -236,7 +234,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 13. Part Two
+### 2023 Day 13. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -246,7 +244,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 14. Part Two
+### 2023 Day 14. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -256,7 +254,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 15. Part Two
+### 2023 Day 15. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -266,7 +264,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 16. Part Two
+### 2023 Day 16. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -276,7 +274,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 17. Part Two
+### 2023 Day 17. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -286,7 +284,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 18. Part Two
+### 2023 Day 18. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -296,7 +294,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 19. Part Two
+### 2023 Day 19. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -306,7 +304,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 20. Part Two
+### 2023 Day 20. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -316,7 +314,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 21. Part Two
+### 2023 Day 21. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -326,7 +324,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 22. Part Two
+### 2023 Day 22. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -336,7 +334,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 23. Part Two
+### 2023 Day 23. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -346,7 +344,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 24. Part Two
+### 2023 Day 24. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
@@ -356,7 +354,7 @@ What is the sum of all of the calibration values? `54824`
 
 
 
-### 2023 Day 25. Part Two
+### 2023 Day 25. part 2:
 [back to TOC](#2023-table-of-contents)
 
 
