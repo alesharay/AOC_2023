@@ -4,9 +4,9 @@ Link to site: [https://adventofcode.com/2023/](https://adventofcode.com/2023/)
 
 ### Table of Contents
 
-[1. Day 1: Trebuchet?!](days/day_one/README.md)\
-[2. Day 2: Cube Conundrum](days/day_two/README.md)\
-[3. Day 3: Gear Ratios](days/day_three/README.md)
+[1. Day 1: Trebuchet?!](days/day1/README.md)\
+[2. Day 2: Cube Conundrum](days/day2/README.md)\
+[3. Day 3: Gear Ratios](days/day3/README.md)
 
 ------------------------------------------------------------------------------------
 
