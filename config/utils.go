@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"slices"
+	"strconv"
 	"strings"
 )
 
@@ -20,19 +21,8 @@ var (
 		"nine": 9,
 	}
 
-	Keys = []string {
-		"one",
-		"two",
-		"three",
-		"four",
-		"five",
-		"six",
-		"seven",
-		"eight",
-		"nine",
-	}
+	Keys = strings.Split("one two three four five six seven eight nine", " ")
 )
-
 
 type Word_Index struct {
 	Word string
@@ -72,7 +62,7 @@ func Word_Index_Func(
 		if reverse {
 			word = Reverse_String(word)
 		}
-	
+
 		if strings.Contains(line, word) {
 			contains = true
 			index := strings.Index(line, word)
@@ -150,4 +140,143 @@ func Get_Full_Filename(io, day, filename string) string {
 
 func Is_Game_Possible(count, max int) bool {
 	return count <= max
+}
+
+func Create_Grid(lines []string) (grid [][]string) {
+	for _, line := range lines {
+		grid = append(grid, strings.Split(line, ""))
+	}
+
+	return grid
+}
+
+func Is_Number(char string) bool {
+	_, e := strconv.Atoi(char)
+
+	if e != nil {
+		return false
+	}
+
+	return true
+}
+
+func Is_End_Index (line []string, current_index int) bool {
+	return (current_index == len(line)-1) || !Is_Number(line[current_index+1])
+}
+
+type Values_Map struct {
+	Value int
+	Row int
+	Start int
+	End int
+}
+
+func Get_Grid_Values(grid [][]string) (values_map []Values_Map) {
+	values_map = []Values_Map{}
+
+	for i, line := range grid {
+		value := ""
+		start_index := 0
+		end_index := 0
+
+		for j, val := range line {
+			is_num := Is_Number(val)
+			if value == "" && is_num {
+				value = val
+				start_index = j
+			} else if is_num { value += val }
+
+			if Is_End_Index(line, j) {
+				end_index = j
+				val_int, _ := strconv.Atoi(value)
+				if val_int != 0 {
+					values_map = append(values_map, Values_Map{
+						Value: val_int,
+						Row: i,
+						Start: start_index,
+						End: end_index,
+					})
+				}
+				value = ""
+			}
+		}
+	}
+
+	return values_map
+}
+
+func Neighbor_Is_Symbol(grid [][]string, row, start, end int) bool {
+	row_len := len(grid[row])
+	col_len := len(grid)
+
+	for i := row-1 ; i <= row+1 ; i++ {
+		if i < 0 || i >= col_len { continue }
+		for j := start-1 ; j <= end+1 ; j++ {
+			if j < 0 || j >= row_len { continue }
+			if i == row && (j >= start && j <= end) { continue }
+			if grid[i][j] != "." { return true }
+		}
+	}
+
+	return false
+}
+
+type Coordinates struct{
+	Row int
+	Col int
+}
+
+func Get_Star_Values(grid [][]string) (values_map []Coordinates) {
+	values_map = []Coordinates{}
+
+	for i, line := range grid {
+
+		for j, val := range line {
+			if val == "*" {
+				values_map = append(values_map, Coordinates{
+					Row: i,
+					Col: j,
+				})
+			}
+		}
+	}
+
+	return values_map
+}
+
+func Gear_Neighbor_Count(grid [][]string, coordinates []Coordinates) (result []int) {
+
+	for i, coordinate := range coordinates {
+		row_len := len(grid)
+		col_len := len(grid[coordinate.Row])
+		count := 0
+
+		if i < 0 || i >= row_len { continue }
+		for j := coordinate.Col-1 ; j <= coordinate.Col+1 ; j++ {
+			if j < 0 || j >= col_len { continue }
+			if (i == coordinate.Row) && (j == coordinate.Col) { continue }
+
+			if Is_Number(grid[i][j]) { count++ }
+
+			result = append(result, )
+		}
+		result = append(result, count)
+	}
+
+	return result
+}
+
+func Sum_of_Neighbord_Vals(full_output_filename string, values_map []Values_Map, grid [][]string) (sum int) {
+	for _, value := range values_map {
+		row := value.Row
+		start := value.Start
+		end := value.End
+
+		if Neighbor_Is_Symbol(grid, row, start, end) {
+			val := strconv.Itoa(value.Value)
+			Write_to_file(full_output_filename, val)
+			sum += value.Value
+		}
+	}
+	return sum
 }
