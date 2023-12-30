@@ -8,6 +8,42 @@ import (
 	"strings"
 )
 
+
+////////////
+// GLOBAL //
+////////////
+
+func Check(e error) {
+	if e != nil {
+			panic(e)
+	}
+}
+
+func Read_from_File(filename string) []string {
+	input, err := os.ReadFile(filename)
+	Check(err)
+
+	return strings.Split(string(input), "\n")
+}
+
+func Write_to_file(filename string, output string) {
+	out, err := os.OpenFile(filename,
+	os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	Check(err)
+
+	defer out.Close()
+	_, err = out.WriteString(output+"\n")
+	Check(err)
+}
+
+func Get_Full_Filename(io, day, filename string) string {
+	return fmt.Sprintf("days/%v/%v/%v.txt", day, io, filename)
+}
+
+///////////
+// DAY 1 //
+///////////
+
 var (
 	Word_to_Num = map[string]int{
 		"one": 1,
@@ -83,7 +119,6 @@ func Word_Index_Func(
 	}
 }
 
-
 func Reverse_String(str string) (result string) {
 	// iterate over str and prepend to result
 	for _ , v := range str {
@@ -111,36 +146,17 @@ func Word_Values(
 	return word_index, word.Word
 }
 
-func Check(e error) {
-	if e != nil {
-			panic(e)
-	}
-}
-
-func Read_from_File(filename string) []string {
-	input, err := os.ReadFile(filename)
-	Check(err)
-
-	return strings.Split(string(input), "\n")
-}
-
-func Write_to_file(filename string, output string) {
-	out, err := os.OpenFile(filename,
-	os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-	Check(err)
-
-	defer out.Close()
-	_, err = out.WriteString(output+"\n")
-	Check(err)
-}
-
-func Get_Full_Filename(io, day, filename string) string {
-	return fmt.Sprintf("days/%v/%v/%v.txt", day, io, filename)
-}
+///////////
+// Day 2 //
+///////////
 
 func Is_Game_Possible(count, max int) bool {
 	return count <= max
 }
+
+///////////
+// DAY 3 //
+///////////
 
 func Create_Grid(lines []string) (grid [][]string) {
 	for _, line := range lines {
